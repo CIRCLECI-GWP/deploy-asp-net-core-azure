@@ -32,6 +32,7 @@ jobs:
       - azure-cli/install
       - azure-cli/login-with-user:
           alternate-tenant: false
+      - azure-cli/login-with-service-principal
       - attach_workspace:
           at: ~/project
       - run:
